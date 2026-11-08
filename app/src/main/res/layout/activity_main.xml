@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CADBFA"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="24dp">
+
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_marginTop="32dp"
+            android:scaleType="centerInside"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:srcCompat="@drawable/logo" />
+
+
+        <TextView
+            android:id="@+id/tvSubtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Excess Baggage System"
+            android:textColor="#4A5568"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginTop="12dp"
+            app:layout_constraintTop_toBottomOf="@id/imageView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+
+        <Button
+            android:id="@+id/btnGoToCalculator"
+            android:layout_width="0dp"
+            android:layout_height="54dp"
+            android:layout_marginTop="36dp"
+            android:backgroundTint="#2B6CB0"
+            android:text="Calculator"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:icon="@drawable/calc"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvSubtitle" />
+
+
+        <Button
+            android:id="@+id/btnGoToAbout"
+            android:layout_width="0dp"
+            android:layout_height="54dp"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="#2B6CB0"
+            android:text="About Page"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:icon="@android:drawable/ic_dialog_info"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btnGoToCalculator" />
+
+
+        <Button
+            android:id="@+id/btnShareApp"
+            android:layout_width="0dp"
+            android:layout_height="54dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="24dp"
+            android:backgroundTint="#2B6CB0"
+            android:text="Share App"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:icon="@android:drawable/ic_menu_share"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btnGoToAbout"
+            app:layout_constraintVertical_bias="0.0" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
