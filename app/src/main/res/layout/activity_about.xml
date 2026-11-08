@@ -71,7 +71,7 @@
                     android:autoLink="web"
                     android:clickable="true"
                     android:focusable="true"
-                    android:text="GitHub Repository:\nhttps://github.com/Panadhaa/Individual_Assignment_ICT602.git"
+                    android:text="GitHub Repository:\nhttps://github.com/Panadhaa/IndividualAssigment_ICT602.git"
                     android:textColor="#2B6CB0"
                     android:textSize="15sp"
                     android:textStyle="bold" />
