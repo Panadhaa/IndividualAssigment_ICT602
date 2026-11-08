@@ -47,7 +47,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent shareIntent = new Intent(Intent.ACTION_SEND);
                 shareIntent.setType("text/plain");
-                shareIntent.putExtra(Intent.EXTRA_TEXT, "Check out my Excess Baggage Fee app here: https://github.com/Panadhaa/Individual_Assignment_ICT602.git");
+                shareIntent.putExtra(Intent.EXTRA_TEXT, "Check out my Excess Baggage Fee app here: https://github.com/Panadhaa/IndividualAssigment_ICT602.git");
                 startActivity(Intent.createChooser(shareIntent, "Share via"));
             }
         });
